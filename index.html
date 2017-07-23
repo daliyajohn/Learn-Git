@@ -4,7 +4,73 @@
 	<title></title>
 </head>
 <body>
+<!-- The word init means initialize. The command sets up all the tools Git needs to begin tracking changes made to the project. -->
+git init
 
+<!-- You can check the status of your changes -->
+git status
+
+<!-- We can add a file -->
+git add filename
+
+<!-- we can check the differences between the working directory and the staging area with: -->
+git diff filename
+
+<!-- commit is the last step in our Git workflow -->
+git commit -m "Complete first line of dialogue"
+
+<!-- Commits are stored chronologically in the repository and can be viewed with -->
+git log
+
+<!-- the commit you are currently on is known as the HEAD commit -->
+git show HEAD
+
+<!-- discard that change -->
+git checkout HEAD filename
+
+<!-- Add many file -->
+git add filename_1 filename_2
+
+<!-- Unstage file  -->
+git reset HEAD filename
+
+<!-- Delete previous commit -->
+git reset 5d69206
+
+<!-- Git allows us to create branches to experiment with versions of a project. -->
+git branch
+
+<!-- To create a new branch -->
+git branch new_branch
+
+<!-- You can switch to the new branch with -->
+git checkout branch_name
+
+<!-- merging the branch into master with: -->
+git merge file name
+
+<!-- You are currently on the fencing branch. Switch over to the master branch. -->
+git checkout master
+
+<!-- delete branch -->
+git branch -d branch_name
+
+<!-- Clone  -->
+<!-- remote_location tells Git where to go to find the remote -->
+<!-- clone_name is the name you give to the directory in which Git will clone the repository. -->
+git clone remote_location  clone_name
+
+<!-- You can see a list of a Git project's remotes with the command: -->
+git remote -v
+
+<!-- if changes have been made to the remote and bring the changes down to your local copy is with: -->
+git fetch
+
+<!-- git merge command to integrate origin/master into your local master branch -->
+git merge origin/master
+
+<!-- push to master -->
+git push origin your_branch_name
 
 </body>
 </html>
